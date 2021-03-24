@@ -47,6 +47,7 @@ public class MovieController {
 
     @RequestMapping(path = "/getAllMovie", method = RequestMethod.GET)
     List<Movie> getAllMovie() {
+        logger.info("INFO: Inside getAllMovie..");
         return movieService.getAllMovies();
     }
 

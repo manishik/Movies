@@ -42,6 +42,6 @@ public class MovieServiceImpl implements MovieService {
     }
 
     public List<Movie> getAllMovies(){
-        return movieSet;
+        return movieRepository.findAll();
     }
 }

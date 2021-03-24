@@ -17,6 +17,10 @@ public class ActorServiceImpl implements ActorService {
     @Autowired
     ActorRepository actorRepository;
 
+    public boolean actorExits(Actor actor) {
+        return true;
+    }
+
     public Actor addActor(Actor actor) {
         logger.info("Service: addActor...");
         Actor actor1 = actorRepository.save(actor);
